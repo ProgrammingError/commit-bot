@@ -20,7 +20,7 @@ logo="""
 while(True):
 	os.system('clear')
 	print logo
-	print "\n\t\tCREATED BY SPEEDX!!!"
+	print "\n\t\tCREATED BY SPEEDX BUT MODDED BY ERROR!!!"
 	print "\n\n1 - Start BOT "
 	print "2 - How To USE"
 	print "3 - Exit"
@@ -108,7 +108,7 @@ while(True):
 		print '[+] Repository Cleaned '
 		print '[-] Final Commit'
 		os.system('cd test && git add .')
-		os.system('cd test && git commit -m \'Commit By SpeedX Bot!!! \'')
+		os.system('cd test && git commit -m \'Commit By bUTT!!! \'')
 		print '[+] Pushing Repo To Remote URL: '+gu
 		os.system('cd test && git push -u --force origin master')
 		print '[+] '+str(nc)+' Commits Done ... \n\t\tYou Can See it in your Contributions Soon\n\tIf You Don\'t Check Notes in README.md'
