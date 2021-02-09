@@ -1,6 +1,6 @@
 # Commit-Bot
 
-This is a Github Commit Bot By SpeedX 
+This is a Github Commit Bot By SpeedX And modded by ERROR
 This could get you a lot of fake contributions by fake commits At A Great Speed!!!
 
 This Script is Only For Educational Purposes 
