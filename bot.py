@@ -32,9 +32,6 @@ while(True):
 		except:
 			print 'You Are Not Connected To Internet!!!\nPlease Connect To Internet To Continue....'
 			print 'For Any Queries Join Me On WhatsApp!!!'
-			print '\t    Group Link: http://bit.do/speedxgit'
-			print '\n             Mail: ggspeedx29@gmail.com'
-			print '\n  YouTube Channel: https://www.youtube.com/c/GyanaTech'
 			sys.exit(2)
 		nc=input('Enter Number Of Commits To Do: ')
 		gu=raw_input('Enter FULL Git Repository URL(including https://) : ')
@@ -66,22 +63,22 @@ while(True):
 		else:
 			os.system('cd test && rm -rf *')
 			print '[+] Test Directory Found Using It ....'
-		os.system('rm -rf .git>temp.speedx.xxxxx')
+		os.system('rm -rf .git>temp.cpp')
 		print '[+] Preparing Directory...'
 #		os.system('cd test && git init')
 		print '[+] Pulling REMOTE Repository To Local Directory ...'
 #		os.system('cd test && git pull')
 		os.system('cd test && git clone '+gu)
 		rn=gu[gu.rfind('/')+1:]
-		os.system('mv -f test/'+rn+'/*   test >>temp.speedx.xxxxx')
-		os.system('mv -f test/'+rn+'/.??* test>>temp.speedx.xxxxx')
+		os.system('mv -f test/'+rn+'/*   test >>temp.cpp')
+		os.system('mv -f test/'+rn+'/.??* test>>temp.cpp')
 		os.system('cd test && git remote add origin '+gu)
-		os.system('rm -f temp.speedx.xxxxx')
+		os.system('rm -f temp.cpp')
 		os.system('cd test && rm -rf '+rn)
 		print '[+] Repository Successfully Pulled '
 		if not os.path.exists('test/README.md'):
 			os.system('touch test/README.md')
-		f=open('test/temp.speedx','w')
+		f=open('test/temp.cpp','w')
 		f.write(chr(35)+' This Repo Was Commited By SpeedX\'s Commit Bot\n')
 		f.write(chr(35)+chr(35)+chr(35)+' GITHUB LINK\n')
 		f.write( '<a href=\'https://github.com/thespeedx/commit-bot\'> Click Here </a>\n\n')
@@ -89,9 +86,8 @@ while(True):
 #		os.system('cd test && echo '+chr(35)+' This Repo Was Commited By SpeedX\'s Commit Bot >temp.speedx')
 #		os.system('cd test && echo '+chr(35)+chr(35)+chr(35)+' GITHUB LINK >>temp.speedx')
 #		os.system('cd test && echo <a href=\'https://github.com/thespeedx/commit-bot\'> Click Here </a> >>temp.speedx')
-		os.system('cat test/temp.speedx test/README.md test/temp.speedx > test/tmp.xxxx ')
-		os.system('cd test && mv tmp.xxxx README.md')
-		os.system('cd test && rm temp.speedx')
+		os.system('cat test/temp.cpp test/README.md test/temp.cpp > test/tmp.cpp ')
+		os.system('cd test && mv tmp.cpp README.md')
 		os.system('cd test && git config user.name \"'+gn+'\"')
 		os.system('cd test && git config user.email \"'+ge+'\"')
 		os.system('cd test && git add .')
@@ -103,7 +99,6 @@ while(True):
 #			print '[-] Commit Number: '+str(i+1)
 			os.system('cd test && git commit -m \'Commit By SpeedX Bot!!! \'>/dev/null')
 		print '\n[+] Cleaning Repository...'
-		os.system('rm test/temp.speedx.xxx')
 		os.system('cd test && git gc')
 		print '[+] Repository Cleaned '
 		print '[-] Final Commit'
